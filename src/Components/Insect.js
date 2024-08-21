@@ -21,8 +21,8 @@ export default function Insect(props) {
     <group
       {...props}
       dispose={null}
-      scale={[0.04, 0.04, 0.04]}
-      rotation={[-0.1, 2, 0.5]}
+      scale={[0.15, 0.15, 0.15]}
+      rotation={[-1.4, 3.1, 0.8]}
       onPointerOver={(e) => {
         e.stopPropagation();
         setHovered(e.object.material.name);

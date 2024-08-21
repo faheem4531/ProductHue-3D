@@ -156,7 +156,10 @@ function App() {
         );
       case "SprayBottle":
         return (
-          <ColorPicker state={SprayBottleState} updateColor={updateSprayBottleColor} />
+          <ColorPicker
+            state={SprayBottleState}
+            updateColor={updateSprayBottleColor}
+          />
         );
       default:
         break;
