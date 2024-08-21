@@ -48,7 +48,7 @@ const InsectState = proxy({
   current: null,
   colors: { body: "#d3d3d3", shell: "#a8a8a8" },
 });
-const TeapotState = proxy({
+const SprayBottleState = proxy({
   current: null,
   colors: { bottle: "#d3d3d3", cap: "#a8a8a8" },
 });
@@ -86,11 +86,11 @@ function App() {
     InsectState.colors[pro] = value;
   };
 
-  const updateTeapotCurrent = (value) => {
-    TeapotState.current = value;
+  const updateSprayBottleCurrent = (value) => {
+    SprayBottleState.current = value;
   };
-  const updateTeapotColor = (pro, value) => {
-    TeapotState.colors[pro] = value;
+  const updateSprayBottleColor = (pro, value) => {
+    SprayBottleState.colors[pro] = value;
   };
 
   const renderSelectedModel = () => {
@@ -127,12 +127,12 @@ function App() {
             updateCurrent={updateInsectCurrent}
           />
         );
-      case "Teapot":
+      case "SprayBottle":
         return (
           <SprayBottle
             castShadow
-            colors={TeapotState.colors}
-            updateCurrent={updateTeapotCurrent}
+            colors={SprayBottleState.colors}
+            updateCurrent={updateSprayBottleCurrent}
           />
         );
       default:
@@ -154,9 +154,9 @@ function App() {
         return (
           <ColorPicker state={InsectState} updateColor={updateInsectColor} />
         );
-      case "Teapot":
+      case "SprayBottle":
         return (
-          <ColorPicker state={TeapotState} updateColor={updateTeapotColor} />
+          <ColorPicker state={SprayBottleState} updateColor={updateSprayBottleColor} />
         );
       default:
         break;
