@@ -1,16 +1,16 @@
-import { React, Suspense, useState, useRef } from "react";
+import { Float, OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Float } from "@react-three/drei";
+import { React, Suspense, useRef, useState } from "react";
+import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import { proxy } from "valtio";
-import Shoe from "./Components/Shoe";
-import Rocket from "./Components/Rocket";
 import Axe from "./Components/Axe";
-import Loader from "./Components/Loader";
-import ModelPicker from "./Components/ModelPicker";
 import ColorPicker from "./Components/ColorPicker";
 import Insect from "./Components/Insect";
+import Loader from "./Components/Loader";
+import ModelPicker from "./Components/ModelPicker";
+import Rocket from "./Components/Rocket";
+import Shoe from "./Components/Shoe";
 import Teapot from "./Components/Teapot";
-import { AiOutlineStar, AiFillStar } from "react-icons/ai";
 
 const RocketState = proxy({
   current: null,
@@ -205,7 +205,7 @@ function App() {
           className="holder"
           onClick={() => {
             setLinkOpened(true);
-            window.open("https://github.com/faheem4531/product-showcase-3d");
+            window.open("https://github.com/faheem4531/ProductHue-3D");
           }}
         >
           {linkOpened ? (
@@ -213,7 +213,7 @@ function App() {
           ) : (
             <AiOutlineStar color="#a8a8a8" size={24} />
           )}
-          <span>Faheem4531/product-showcase-3d</span>
+          <span>Faheem4531/ProductHue-3D</span>
         </div>
       </div>
     </>
