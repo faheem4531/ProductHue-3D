@@ -47,13 +47,13 @@ export default function SprayBottle(props) {
           castShadow
           geometry={nodes.imagetostl_mesh0.geometry}
         >
-          <meshStandardMaterial color={snap.lid} name="lid" />
+          <meshStandardMaterial color={snap.bottle} name="bottle" />
         </mesh>
         <mesh
           castShadow
           geometry={nodes.imagetostl_mesh1.geometry}
         >
-          <meshStandardMaterial color={snap.base} name="base" />
+          <meshStandardMaterial color={snap.cap} name="cap" />
         </mesh>
       </group>
     </group>

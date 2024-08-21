@@ -16,7 +16,7 @@ const RocketState = proxy({
   current: null,
   colors: {
     hull: "#d3d3d3",
-    base: "#d3d3d3",
+    cap: "#d3d3d3",
     tip: "#d3d3d3",
     wings: "#a8a8a8",
     window: "#a8a8a8",
@@ -50,7 +50,7 @@ const InsectState = proxy({
 });
 const TeapotState = proxy({
   current: null,
-  colors: { lid: "#d3d3d3", base: "#a8a8a8" },
+  colors: { bottle: "#d3d3d3", cap: "#a8a8a8" },
 });
 
 function App() {
