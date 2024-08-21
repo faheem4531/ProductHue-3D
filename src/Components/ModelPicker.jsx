@@ -1,9 +1,9 @@
 import React from "react";
-import shoe from "../img/shoe.png";
-import rocket from "../img/rocket.png";
 import axe from "../img/axe.png";
 import insect from "../img/insect.png";
-import teapot from "../img/teapot.png";
+import rocket from "../img/rocket.png";
+import shoe from "../img/shoe.png";
+import SprayBottle from "../img/spray-botel.png";
 
 const ModelPicker = ({ updateSelectedModel }) => {
   return (
@@ -26,8 +26,8 @@ const ModelPicker = ({ updateSelectedModel }) => {
           <h4>Insect</h4>
         </div>
         <div onClick={() => updateSelectedModel("Teapot")}>
-          <img src={teapot} alt="teapot" />
-          <h4>Teapot</h4>
+          <img src={SprayBottle} alt="SprayBottle" />
+          <h4>Spray Bottle</h4>
         </div>
       </div>
     </>

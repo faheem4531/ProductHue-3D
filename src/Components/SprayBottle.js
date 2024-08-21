@@ -2,8 +2,8 @@ import { useGLTF } from '@react-three/drei';
 import { React, useEffect, useState } from "react";
 import { useSnapshot } from "valtio";
 
-export default function Teapot(props) {
-  const { nodes, materials } = useGLTF('/spray-bottle.glb')
+export default function SprayBottle(props) {
+  const { nodes } = useGLTF('/spray-bottle.glb')
   const snap = useSnapshot(props.colors);
   const [hovered, setHovered] = useState(null);
 
@@ -19,7 +19,7 @@ export default function Teapot(props) {
 
 
   return (
-    <group {...props} 
+    <group 
     {...props}
     dispose={null}
     scale={0.001}
@@ -42,22 +42,19 @@ export default function Teapot(props) {
       props.updateCurrent(null);
     }}
     >
-
-<group rotation={[-Math.PI / 2, 0, 0]}>
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.imagetostl_mesh0.geometry}
-      >
+      <group rotation={[-Math.PI / 2, 0, 0]}>
+        <mesh
+          castShadow
+          geometry={nodes.imagetostl_mesh0.geometry}
+        >
           <meshStandardMaterial color={snap.lid} name="lid" />
-      </mesh>
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.imagetostl_mesh1.geometry}
-      >
+        </mesh>
+        <mesh
+          castShadow
+          geometry={nodes.imagetostl_mesh1.geometry}
+        >
           <meshStandardMaterial color={snap.base} name="base" />
-      </mesh>
+        </mesh>
       </group>
     </group>
   )

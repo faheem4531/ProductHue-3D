@@ -10,7 +10,7 @@ import Loader from "./Components/Loader";
 import ModelPicker from "./Components/ModelPicker";
 import Rocket from "./Components/Rocket";
 import Shoe from "./Components/Shoe";
-import Teapot from "./Components/Teapot";
+import SprayBottle from "./Components/SprayBottle";
 
 const RocketState = proxy({
   current: null,
@@ -129,7 +129,7 @@ function App() {
         );
       case "Teapot":
         return (
-          <Teapot
+          <SprayBottle
             castShadow
             colors={TeapotState.colors}
             updateCurrent={updateTeapotCurrent}
