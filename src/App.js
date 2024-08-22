@@ -4,8 +4,8 @@ import { React, Suspense, useRef, useState } from "react";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import { proxy } from "valtio";
 import Axe from "./Components/Axe";
+import Burger from "./Components/Burger";
 import ColorPicker from "./Components/ColorPicker";
-import Insect from "./Components/Insect";
 import Loader from "./Components/Loader";
 import ModelPicker from "./Components/ModelPicker";
 import Rocket from "./Components/Rocket";
@@ -126,7 +126,7 @@ function App() {
         );
       case "Burger":
         return (
-          <Insect
+          <Burger
             castShadow
             colors={BurgerState.colors}
             updateCurrent={updateBurgerCurrent}

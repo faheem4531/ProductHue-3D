@@ -2,7 +2,7 @@ import { useGLTF } from "@react-three/drei";
 import { React, useEffect, useState } from "react";
 import { useSnapshot } from "valtio";
 
-export default function Insect(props) {
+export default function Burger(props) {
   const { nodes } = useGLTF("/burger.glb");
   const snap = useSnapshot(props.colors);
   const [hovered, setHovered] = useState(null);
