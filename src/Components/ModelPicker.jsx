@@ -29,6 +29,10 @@ const ModelPicker = ({ updateSelectedModel }) => {
           <img src={SprayBottle} alt="SprayBottle" />
           <h4>Spray Bottle</h4>
         </div>
+        <div onClick={() => updateSelectedModel("Lens")}>
+          <img src={SprayBottle} alt="Lens" />
+          <h4>Lens</h4>
+        </div>
       </div>
     </>
   );

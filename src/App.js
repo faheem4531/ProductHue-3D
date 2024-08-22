@@ -6,6 +6,7 @@ import { proxy } from "valtio";
 import Axe from "./Components/Axe";
 import Burger from "./Components/Burger";
 import ColorPicker from "./Components/ColorPicker";
+import Lens from "./Components/Lens";
 import Loader from "./Components/Loader";
 import ModelPicker from "./Components/ModelPicker";
 import RollerSkate from "./Components/RollerSkate";
@@ -53,6 +54,16 @@ const ShoeState = proxy({
     stripes: "#d3d3d3",
     band: "#d3d3d3",
     patch: "#d3d3d3",
+  },
+});
+const LensState = proxy({
+  current: null,
+  colors: {
+    outer: "#d3d3d3",
+    head: "#d3d3d3",
+    bottom: "#d3d3d3",
+    inner: "#d3d3d3",
+    name: "#a8a8a8",
   },
 });
 const BurgerState = proxy({
@@ -105,8 +116,17 @@ function App() {
   const updateSprayBottleCurrent = (value) => {
     SprayBottleState.current = value;
   };
+
   const updateSprayBottleColor = (pro, value) => {
     SprayBottleState.colors[pro] = value;
+  };
+
+  const updateLensCurrent = (value) => {
+    LensState.current = value;
+  };
+
+  const updateLensColor = (pro, value) => {
+    LensState.colors[pro] = value;
   };
 
   const renderSelectedModel = () => {
@@ -151,6 +171,14 @@ function App() {
             updateCurrent={updateSprayBottleCurrent}
           />
         );
+      case "Lens":
+        return (
+          <Lens
+            castShadow
+            colors={LensState.colors}
+            updateCurrent={updateLensCurrent}
+          />
+        );
       default:
         break;
     }
@@ -180,6 +208,8 @@ function App() {
             updateColor={updateSprayBottleColor}
           />
         );
+      case "Lens":
+        return <ColorPicker state={LensState} updateColor={updateLensColor} />;
       default:
         break;
     }
