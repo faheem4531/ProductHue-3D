@@ -86,3 +86,7 @@ code {
 .hidden {
   opacity: 0;
 }
+
+input:focus {
+  outline: none;
+}

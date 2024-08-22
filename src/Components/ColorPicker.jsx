@@ -26,10 +26,25 @@ export default function ColorPicker(props) {
         type="text"
         value={color}
         onChange={handleInputChange}
-        maxLength={7}
-        style={{ marginTop: "10px", padding: "5px", width: "100px" }}
+        style={{
+          marginTop: "10px",
+          padding: "7px 5px",
+          width: "200px",
+          background: color,
+          border: "none",
+          borderRadius: "2px",
+          fontWeight: 600,
+        }}
       />
-      <h1>{snap.current}</h1>
+      <h1
+        style={{
+          color: "#a8a8a8",
+          textTransform: "capitalize",
+          fontFamily:"fantasy",
+        }}
+      >
+        {snap.current}
+      </h1>
     </div>
   );
 }

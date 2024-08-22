@@ -194,7 +194,11 @@ function App() {
     <>
       <ModelPicker updateSelectedModel={updateSelectedModel} />
       {renderSelectedColorPicker()}
-      <Canvas shadows camera={{ position: [1, 0, 2] }}>
+      <Canvas
+        shadows
+        camera={{ position: [1, 0, 2] }}
+        style={{ backgroundColor: "#191919" }}
+      >
         <ambientLight />
         <spotLight
           intensity={0.5}
