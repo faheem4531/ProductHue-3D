@@ -4,8 +4,9 @@ This project was made with GLTF models, Threejs, 3-Fiber, 3-drei and React!
 
 [Live Demo](https://product-hue-3d.netlify.app/)
 
-![Demo](/src/img/scate.png)
-(/src/img/styleAxe.png)
+![Roller Skate](/src/img/scate.png)
+![Axe](/src/img/styleAxe.png)
+
 ## About the Project
 
 Interactive 3D Product Visualizer with Color Picker
@@ -26,4 +27,3 @@ This interactive 3D product visualizer is a valuable addition to online shopping
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
