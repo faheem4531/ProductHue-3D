@@ -45,6 +45,9 @@ code {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  overflow-y: scroll;
+  column-gap: 40px;
+  background-color: #191919;
 
   div {
     h4 {
@@ -52,7 +55,7 @@ code {
       margin: 0;
       color: #a8a8a8;
       font-size: 15px;
-      font-family:'Times New Roman', Times, serif;
+      font-family: "Times New Roman", Times, serif;
     }
     img {
       max-width: 100px;
