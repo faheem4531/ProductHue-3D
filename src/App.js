@@ -44,9 +44,14 @@ const ShoeState = proxy({
     patch: "#d3d3d3",
   },
 });
-const InsectState = proxy({
+const BurgerState = proxy({
   current: null,
-  colors: { body: "#d3d3d3", shell: "#a8a8a8" },
+  colors: {
+    topBun: "#d3d3d3",
+    bottomBun: "#d3d3d3",
+    patty: "#d3d3d3",
+    cheese: "#d3d3d3",
+  },
 });
 const SprayBottleState = proxy({
   current: null,
@@ -79,11 +84,11 @@ function App() {
     RocketState.colors[pro] = value;
   };
 
-  const updateInsectCurrent = (value) => {
-    InsectState.current = value;
+  const updateBurgerCurrent = (value) => {
+    BurgerState.current = value;
   };
-  const updateInsectColor = (pro, value) => {
-    InsectState.colors[pro] = value;
+  const updateBurgerColor = (pro, value) => {
+    BurgerState.colors[pro] = value;
   };
 
   const updateSprayBottleCurrent = (value) => {
@@ -119,12 +124,12 @@ function App() {
             updateCurrent={updateAxeCurrent}
           />
         );
-      case "Insect":
+      case "Burger":
         return (
           <Insect
             castShadow
-            colors={InsectState.colors}
-            updateCurrent={updateInsectCurrent}
+            colors={BurgerState.colors}
+            updateCurrent={updateBurgerCurrent}
           />
         );
       case "SprayBottle":
@@ -150,9 +155,9 @@ function App() {
         );
       case "Axe":
         return <ColorPicker state={AxeState} updateColor={updateAxeColor} />;
-      case "Insect":
+      case "Burger":
         return (
-          <ColorPicker state={InsectState} updateColor={updateInsectColor} />
+          <ColorPicker state={BurgerState} updateColor={updateBurgerColor} />
         );
       case "SprayBottle":
         return (
