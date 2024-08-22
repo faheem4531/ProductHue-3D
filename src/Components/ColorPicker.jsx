@@ -1,16 +1,15 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { HexColorPicker } from "react-colorful";
 import { useSnapshot } from "valtio";
 
 export default function ColorPicker(props) {
   const snap = useSnapshot(props.state);
-  
+
   const [color, setColor] = useState(snap.colors[snap.current]);
 
   useEffect(() => {
     setColor(snap.colors[snap.current]);
-  }, [snap.current]); // Update the color when the current part changes
-
+  }, [snap]);
   const handleColorChange = (newColor) => {
     setColor(newColor);
     props.updateColor(snap.current, newColor);
