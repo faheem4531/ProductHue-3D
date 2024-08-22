@@ -2,23 +2,25 @@
 
 This project was made with GLTF models, Threejs, 3-Fiber, 3-drei and React!
 
-[Live Demo](https://product-showcase-3d.vercel.app/)
+[Live Demo](https://product-hue-3d.netlify.app/)
 
 ![Demo](/src/img/demo.png)
 
 ## About the Project
 
-An interactive 3D product visualizer with color picker built with Three.js, React Three Fiber, and React. It is a useful tool for e-commerce websites or other online platforms that sell physical products. It allows users to view a 3D model of the product from different angles and customize its appearance by changing the color and other visual aspects.
+Interactive 3D Product Visualizer with Color Picker
 
-To build this tool, I started by setting up a basic 3D scene using Three.js and React Three Fiber. This involves creating a renderer, camera, and scene, as well as adding lighting and any necessary materials or textures.
+Built with Three.js, React Three Fiber, and React, this tool enhances e-commerce websites and online platforms by allowing users to interact with 3D product models. Users can view the product from various angles and customize its appearance by selecting different colors and adjusting visual aspects.
 
-Next, I added the 3D models to the scene. Adjusted the scale and rigged the materials to be grouped appropriately with the mesh parts. The models can be created from scratch or imported from a 3D modeling software such as Blender.
+The development process began by establishing a basic 3D scene using Three.js and React Three Fiber. This setup included creating the renderer, camera, and scene, along with the necessary lighting, materials, and textures.
 
-To allow the user to customize the appearance of the product, I then implemented a color picker UI element that allows the user to select different parts of the mesh and edit the visual options. Then update the material of the product model based on the user's selection.
+3D models were then integrated into the scene, with careful adjustments to scale and material grouping to align with the mesh components. These models can either be custom-made or imported from software like Blender.
 
-Finally, I added add any desired visual effects, as well as any necessary user interface elements, such as buttons to rotate the model or zoom in and out.
+To enable customization, a color picker UI was implemented, allowing users to select specific parts of the model and modify its appearance. The tool dynamically updates the product's material based on user input.
 
-Overall, an interactive 3D product visualizer with color picker built with Three.js, React Three Fiber, and React can be a useful and engaging tool for online shopping platforms, allowing users to get a better sense of the appearance and dimensions of a product before purchasing.
+Final touches included adding visual effects and essential user interface elements, such as buttons for model rotation and zooming.
+
+This interactive 3D product visualizer is a valuable addition to online shopping platforms, offering users a detailed and immersive view of products, ultimately enhancing their purchasing experience.
 
 ### `npm start`
 

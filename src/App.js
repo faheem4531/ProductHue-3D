@@ -81,7 +81,7 @@ const SprayBottleState = proxy({
 });
 
 function App() {
-  const [selectedModel, setSelectedModel] = useState("Shoe");
+  const [selectedModel, setSelectedModel] = useState("RollerSkate");
   const [linkOpened, setLinkOpened] = useState(false);
   const controls = useRef();
 
@@ -251,7 +251,7 @@ function App() {
             floatIntensity={0.5}
             floatingRange={[0, 0.3]}
           >
-          {renderSelectedModel()}
+            {renderSelectedModel()}
           </Float>
         </Suspense>
         <OrbitControls ref={controls} maxDistance={5} minDistance={1.5} />
