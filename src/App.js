@@ -16,10 +16,21 @@ const RollerSkateState = proxy({
   current: null,
   colors: {
     hull: "#d3d3d3",
-    cap: "#d3d3d3",
-    tip: "#d3d3d3",
-    wings: "#a8a8a8",
-    window: "#a8a8a8",
+    wheel: "#a8a8a8",
+    eyelets: "#a8a8a8",
+    headNotes: "#a8a8a8",
+    laces: "#d3d3d3",
+    boot: "#a8a8a8",
+    tongue: "#a8a8a8",
+    sole: "#d3d3d3",
+    toeStop: "#d3d3d3",
+    carryLoop: "#d3d3d3",
+    inner: "#d3d3d3",
+    plate: "#d3d3d3",
+    bearings: "#d3d3d3",
+    mesh: "#d3d3d3",
+    suport: "#d3d3d3",
+    pins: "#d3d3d3",
   },
 });
 const AxeState = proxy({
@@ -151,7 +162,10 @@ function App() {
         return <ColorPicker state={ShoeState} updateColor={updateShoeColor} />;
       case "RollerSkate":
         return (
-          <ColorPicker state={RollerSkateState} updateColor={updateRollerSkateColor} />
+          <ColorPicker
+            state={RollerSkateState}
+            updateColor={updateRollerSkateColor}
+          />
         );
       case "Axe":
         return <ColorPicker state={AxeState} updateColor={updateAxeColor} />;
