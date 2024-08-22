@@ -8,7 +8,7 @@ import Burger from "./Components/Burger";
 import ColorPicker from "./Components/ColorPicker";
 import Loader from "./Components/Loader";
 import ModelPicker from "./Components/ModelPicker";
-import Rocket from "./Components/Rocket";
+import RollerSkate from "./Components/RollerSkate";
 import Shoe from "./Components/Shoe";
 import SprayBottle from "./Components/SprayBottle";
 
@@ -108,9 +108,9 @@ function App() {
             updateCurrent={updateShoeCurrent}
           />
         );
-      case "Rocket":
+      case "RollerSkate":
         return (
-          <Rocket
+          <RollerSkate
             castShadow
             colors={RocketState.colors}
             updateCurrent={updateRocketCurrent}
@@ -149,7 +149,7 @@ function App() {
     switch (selectedModel) {
       case "Shoe":
         return <ColorPicker state={ShoeState} updateColor={updateShoeColor} />;
-      case "Rocket":
+      case "RollerSkate":
         return (
           <ColorPicker state={RocketState} updateColor={updateRocketColor} />
         );

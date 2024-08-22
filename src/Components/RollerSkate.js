@@ -2,7 +2,7 @@ import { React, useState, useEffect } from "react";
 import { useGLTF } from "@react-three/drei";
 import { useSnapshot } from "valtio";
 
-export default function Rocket(props) {
+export default function RollerSkate(props) {
   const { nodes } = useGLTF("/Rocket/scene.gltf");
   const snap = useSnapshot(props.colors);
   const [hovered, setHovered] = useState(null);

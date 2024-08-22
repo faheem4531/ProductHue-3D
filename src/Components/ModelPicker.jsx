@@ -13,9 +13,9 @@ const ModelPicker = ({ updateSelectedModel }) => {
           <img src={shoe} alt="shoe" />
           <h4>Shoe</h4>
         </div>
-        <div onClick={() => updateSelectedModel("Rocket")}>
-          <img src={rocket} alt="rocket" />
-          <h4>Rocket</h4>
+        <div onClick={() => updateSelectedModel("RollerSkate")}>
+          <img src={rocket} alt="rollerSkate" />
+          <h4>Roller Skate</h4>
         </div>
         <div onClick={() => updateSelectedModel("Axe")}>
           <img src={axe} alt="axe" />
