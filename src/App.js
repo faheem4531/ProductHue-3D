@@ -12,7 +12,7 @@ import RollerSkate from "./Components/RollerSkate";
 import Shoe from "./Components/Shoe";
 import SprayBottle from "./Components/SprayBottle";
 
-const RocketState = proxy({
+const RollerSkateState = proxy({
   current: null,
   colors: {
     hull: "#d3d3d3",
@@ -77,11 +77,11 @@ function App() {
     AxeState.colors[pro] = value;
   };
 
-  const updateRocketCurrent = (value) => {
-    RocketState.current = value;
+  const updateRollerSkateCurrent = (value) => {
+    RollerSkateState.current = value;
   };
-  const updateRocketColor = (pro, value) => {
-    RocketState.colors[pro] = value;
+  const updateRollerSkateColor = (pro, value) => {
+    RollerSkateState.colors[pro] = value;
   };
 
   const updateBurgerCurrent = (value) => {
@@ -112,8 +112,8 @@ function App() {
         return (
           <RollerSkate
             castShadow
-            colors={RocketState.colors}
-            updateCurrent={updateRocketCurrent}
+            colors={RollerSkateState.colors}
+            updateCurrent={updateRollerSkateCurrent}
           />
         );
       case "Axe":
@@ -151,7 +151,7 @@ function App() {
         return <ColorPicker state={ShoeState} updateColor={updateShoeColor} />;
       case "RollerSkate":
         return (
-          <ColorPicker state={RocketState} updateColor={updateRocketColor} />
+          <ColorPicker state={RollerSkateState} updateColor={updateRollerSkateColor} />
         );
       case "Axe":
         return <ColorPicker state={AxeState} updateColor={updateAxeColor} />;
