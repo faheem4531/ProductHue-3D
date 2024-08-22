@@ -69,8 +69,8 @@ const LensState = proxy({
 const BurgerState = proxy({
   current: null,
   colors: {
-    topBun: "#d3d3d3",
-    bottomBun: "#d3d3d3",
+    topBun: "#a8a8a8",
+    bottomBun: "#a8a8a8",
     patty: "#d3d3d3",
     cheese: "#d3d3d3",
   },
@@ -247,11 +247,11 @@ function App() {
         <Suspense fallback={<Loader />}>
           <Float
             speed={1}
-            rotationIntensity={1}
-            floatIntensity={1}
+            rotationIntensity={0.5}
+            floatIntensity={0.5}
             floatingRange={[0, 0.3]}
           >
-            {renderSelectedModel()}
+          {renderSelectedModel()}
           </Float>
         </Suspense>
         <OrbitControls ref={controls} maxDistance={5} minDistance={1.5} />

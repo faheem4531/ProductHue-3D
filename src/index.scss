@@ -39,8 +39,8 @@ code {
   top: 0;
   right: 0;
   z-index: 10;
-  height: 90vh;
-  max-height: 90vh;
+  height: 95vh;
+  max-height: 95vh;
   margin: 16px;
   display: flex;
   flex-direction: column;
@@ -50,6 +50,9 @@ code {
     h4 {
       text-align: center;
       margin: 0;
+      color: #a8a8a8;
+      font-size: 15px;
+      font-family:'Times New Roman', Times, serif;
     }
     img {
       max-width: 100px;

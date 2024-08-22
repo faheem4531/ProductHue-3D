@@ -1,5 +1,5 @@
-import { React, useState, useEffect } from "react";
 import { useGLTF } from "@react-three/drei";
+import { React, useEffect, useState } from "react";
 import { useSnapshot } from "valtio";
 
 export default function Axe(props) {
@@ -15,7 +15,7 @@ export default function Axe(props) {
       )}'), auto`;
     }
     return () => (document.body.style.cursor = "auto");
-  }, [hovered,snap]);
+  }, [hovered, snap]);
 
   return (
     <group

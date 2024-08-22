@@ -24,7 +24,7 @@ export default function SprayBottle(props) {
     dispose={null}
     scale={0.001}
     position={[0, -0.7, 0]}
-    rotation={[3.1, 0.2, 0]}
+    rotation={[3.1, 0.2, 0.4]}
     onPointerOver={(e) => {
       e.stopPropagation();
       setHovered(e.object.material.name);
