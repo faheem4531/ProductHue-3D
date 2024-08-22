@@ -59,7 +59,7 @@ const ShoeState = proxy({
 const LensState = proxy({
   current: null,
   colors: {
-    outer: "#d3d3d3",
+    outer: "#a8a8a8",
     head: "#d3d3d3",
     bottom: "#d3d3d3",
     inner: "#d3d3d3",
